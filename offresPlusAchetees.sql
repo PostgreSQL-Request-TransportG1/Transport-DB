@@ -1,2 +1,0 @@
-create view nbroffreachetee as select offre.type,count(reserver.id_offre) from offre inner join reserver on offre.id_offre = reserver.id_offre group by offre.id_offre;
-select nbroffreachetee.type,offre.tarif from nbroffreachetee inner join offre on nbroffreachetee.type = offre.type where count = (select max(count) from nbroffreachetee);
