@@ -1,0 +1,1 @@
+select place from reserver;
