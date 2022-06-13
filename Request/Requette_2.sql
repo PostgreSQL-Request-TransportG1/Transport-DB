@@ -1,0 +1,1 @@
+select * from voyage where heure_depart <'17:00:00';
