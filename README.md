@@ -1,5 +1,8 @@
 # POSTGRES QUERIES FOR TOKY TRANSPORT 
 
+![PostgreSQL-Queries](https://user-images.githubusercontent.com/47100064/173793853-d6d32cc4-0960-4744-a23a-df1e663e3d16.jpg)
+
+
 > This repo contains important Postgresql queries about transportation database   
 
 
