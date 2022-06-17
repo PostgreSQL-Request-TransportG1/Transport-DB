@@ -60,7 +60,7 @@ In order to import these queries, you need to install PgAdmin PSQL or in your sy
 👤 **SOAMIANDRA Miaritiana Louis Daniel**
 
 - Github: [Miaritiana](https://github.com/Miaritiana)
-- STD: STD21005
+- STD: STD21033
 
 ## 🤝 Contributing
 
