@@ -11,7 +11,7 @@ insert into ville (nom_ville) values ('Suya');
 insert into ville (nom_ville) values ('Nässjö');
 insert into ville (nom_ville) values ('Al Minyā');
 insert into ville (nom_ville) values ('Mattaldi');
-insert into ville (nom_ville) values ('Qal‘at Bīshah');
+insert into ville (nom_ville) values ('Qalat Bīshah');
 insert into ville (nom_ville) values ('Yarmolyntsi');
 insert into ville (nom_ville) values ('Pirapozinho');
 insert into ville (nom_ville) values ('Ladoeiro');
