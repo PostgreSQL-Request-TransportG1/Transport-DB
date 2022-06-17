@@ -57,6 +57,11 @@ In order to import these queries, you need to install PgAdmin PSQL or in your sy
 - Github: [vohizy](https://github.com/Vohizy)
 - STD: STD21005
 
+👤 **SOAMIANDRA Miaritiana Louis Daniel**
+
+- Github: [Miaritiana](https://github.com/Miaritiana)
+- STD: STD21005
+
 ## 🤝 Contributing
 
 Our favourite contributions are those that help us improve the project, whether with a contribution, an issue, or a feature request!
