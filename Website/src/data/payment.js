@@ -1,0 +1,1 @@
+export let payment = ["Mobile Money", "Carte Crédit"]
