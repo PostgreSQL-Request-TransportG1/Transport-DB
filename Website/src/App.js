@@ -1,4 +1,5 @@
 import React from "react";
+import FixedSideItems from "./components/fixedSideItems";
 import Reservation from "./components/Reservation";
 import Ville from "./components/Ville";
 import Voyage from "./components/voyage";
@@ -6,7 +7,7 @@ function App() {
   return (
   <>
   <div className="pusher">
-    <nav className="ui inverted vertical masthead center aligned segment bg-success">
+    <nav className="ui inverted vertical masthead center aligned segment" id="banner">
       <div className="navbar fixed-top navbar-expand-lg navbar-nav nav-link col-12">
         <div className="ui large bg-success inverted pointing menu">
           <a href="index.html" className="toc item">
@@ -20,7 +21,7 @@ function App() {
         </div>
       </div>
 
-      <div className="ui text container jumbotron bg-success">
+      <div className="ui text container jumbotron bg-transparent">
         <h1 className="ui inverted header">
           Toky_Transport
         </h1>
@@ -29,8 +30,7 @@ function App() {
       </div>
 
     </nav>
-    <Ville />
-    <Voyage />
+    <FixedSideItems />
     <div className="ui vertical stripe segment container m-2" id="trip">
       <div className="ui middle aligned stackable grid container">
         <div className="row">
@@ -50,7 +50,8 @@ function App() {
         </div>
       </div>
     </div>
-
+    <Ville />
+    <Voyage />
 
     <div className="ui vertical stripe quote segment container d-flex m-2" id="offers">
       <div className="ui equal width stackable internally celled grid">

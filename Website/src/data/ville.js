@@ -1,35 +1,33 @@
 export const city = [
     { 
         code : 101,
-        nom : "Antananarivo"
+        nom : "Antananarivo",
+        image : "Tanà.jpg"
     },
     { 
         code : 102,
-        nom :"Antsiranana"
-    }, 
-    { 
-        code : 103,
-        nom: "Antsirabe"
+        nom :"Antsiranana",
+        image : "suarez.jpg"
     }, 
     { 
         code: 104,
-        nom :"Fianarantsoa"
+        nom :"Fianarantsoa",
+        image : "fianara.jpg"
     },
     { 
         code : 106,
-        nom: "Mahajanga"
-    },
-    { 
-        code: 108,
-        nom: "Morondava"
+        nom: "Mahajanga",
+        image : "Mahajanga.jpg"
     },
     { 
         code: 105,
-        nom: "Toamasina"
+        nom: "Toamasina",
+        image : "Tamatave.jpg"
     },  
     { 
         code : 107,
-        nom: "Toliara"
+        nom: "Toliara",
+        image : "toliara.jpg"
     }
 ]
 

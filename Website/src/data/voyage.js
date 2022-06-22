@@ -27,7 +27,7 @@ export const voyage = [
         jour: new Date().toLocaleDateString(),
         heure : "19:30",
         ville_depart : "Antananarivo",
-        ville_arrivee : "Morondava",
+        ville_arrivee : "Mahajanga",
         place : 0,
         vehicules : "JKL2020"
     },

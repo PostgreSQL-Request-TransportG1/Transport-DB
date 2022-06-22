@@ -1,4 +1,4 @@
-import React, { useReducer, useRef, useState } from "react";
+import React from "react";
 import { offres } from "../data/offres";
 import { payment } from "../data/payment";
 import { city } from "../data/ville";
@@ -6,17 +6,7 @@ import "../style/main.css"
 
 
 export default function Reservation() {
-    const [init, dispatch] = useReducer(displayPay, 0);
-    const [paymentWay, setPaymentWay] = useState("");
-    const ref = useRef(null);
-
-    function displayPay(init = null,action) {
-        setPaymentWay(ref.current.value)
-        console.log(ref.current.value);
-        if(action.type === "Mobile Money"){
-            ref.current.style.display = "block";
-        }
-    }
+   
     return(
         <>
             <div className="container">
@@ -91,7 +81,7 @@ export default function Reservation() {
                         </div>
                         <div  className="form-group">
                             <label>Mode de payment : </label> <br />
-                            <select name="" id="" onChange={()=> dispatch({type : paymentWay})}>
+                            <select name="" id="" >
                                 {
                                     payment.map((elt, k)=>(
                                         <option key={k}>
@@ -102,13 +92,8 @@ export default function Reservation() {
                             </select>
                         </div>
                     </div>
-                    <div id="row-payment" ref={ref}>
-                        <div><img src="notreLogo.png" alt="" /></div>
-                        <div><img src="notreLogo.png" alt="" /></div>
-                        <div><img src="notreLogo.png" alt="" /></div>
-                    </div>
-                    <button className="btn btn-success">Réserver</button>
                 </form>
+                <button className="btn btn-success" id="reserver">Réserver</button>
            </div>
         </>
     )

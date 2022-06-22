@@ -1,1 +1,1 @@
-export let payment = ["Mobile Money", "Carte Crédit"]
+export let payment = ["MVola","Orange Money", "Airtel Money", "Carte Crédit"]

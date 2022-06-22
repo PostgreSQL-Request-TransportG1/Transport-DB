@@ -10,7 +10,7 @@ export default function VilleItems() {
                 city.map((item)=>(
                     <div className="swiper-slide">
                         <div className="img-container">
-                            <img src="notreLogo.png" alt="tahina"></img>
+                            <img src={item.image} alt="tahina"></img>
                         </div>
                         <h6>{item.nom}</h6>
                     </div>
