@@ -6,32 +6,24 @@ import Voyage from "./components/voyage";
 import { Card } from "./components/Cardmt-3_mb-5";
 import { Container_mr2_col5 } from "./components/cardContainer_mr-2_col-5";
 import { Footer } from "./components/footer";
+import { RowCard } from "./components/rowCard";
+import { Column } from "./components/rowCard";
+import { Jumbotron } from "./components/jumbotron";
+import { JumbotronContents } from "./components/jumbotron";
+import { Navbar } from "./components/Navbar";
+
 function App() {
   return (
   <>
   <div className="pusher">
-    <nav className="ui inverted vertical masthead center aligned segment" id="banner">
+    <nav className="ui inverted vertical masthead center aligned segment bg-success" id="banner">
       <div className="navbar fixed-top navbar-expand-lg navbar-nav nav-link col-12">
-        <div className="ui large bg-success inverted pointing menu">
-          <a href="index.html" className="toc item">
-            <img className="ui avatar image" src="notreLogo.png" alt="logo" height="20"></img>
-          </a>
-          <a href="#trip" className="item">Acceuil</a>
-          <a href="#offers" className="item">Offres</a>
-          <a href="#reservation" className="item">Reserver</a>
-          <a href="#contact" className="item">Contacts</a>
-          <a href="#root" className="Right item">Intranet</a>
-        </div>
+        <Navbar />
       </div>
 
-      <div className="ui text container jumbotron bg-transparent">
-        <h1 className="ui inverted header">
-          Toky_Transport
-        </h1>
-        <h2>Une compagnie de transport pour vous.</h2>
-        <div className="ui huge success button btn-group-toggle text-success mt-4">Decouvrez-nous </div>
-      </div>
-
+      <Jumbotron>
+        <JumbotronContents />
+      </Jumbotron>
     </nav>
     <FixedSideItems />
     <div className="ui vertical stripe segment container m-2" id="trip">
@@ -53,20 +45,10 @@ function App() {
     <Voyage />
 
     <div className="ui vertical stripe quote segment container d-flex m-2" id="offers">
-      <div className="ui equal width stackable internally celled grid">
-        <div className="center aligned row card ">
-          <div className="column ">
-            <h3>Request about Offers1</h3>
-            <p>That is what they all say about our offers</p>
-          </div>
-          <div className="column ">
-            <h3>Request about Offers2</h3>
-            <p>
-              <b>Special:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </div>
-        </div>
-      </div>
+      <RowCard>
+        <Column title = "Request about Offers1" contents = "That is what they all say about our offers" />
+        <Column title = "Request about Offers2" contents = "Lorem ipsum dolor sit amet, consectetur adipisicing elit." />
+      </RowCard>
     </div>
 
     <div className="ui vertical stripe segment d-flex align-items-stretch" id="reservation">
